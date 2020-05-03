@@ -1,14 +1,12 @@
 {
-  "name": "bulls-and-cows",
+  "name": "js_bulls_and_cows_game",
   "version": "1.0.0",
   "description": "The Bulls & Cows game",
-  "main": "src/bullsAndCows.js",
+  "main": "src/app.js",
   "scripts": {
-    "play": "node src/startGame.js",
-    "test": "jest",
     "lint": "eslint **/*.js"
   },
-  "author": "Mate academy",
+  "author": "Andrii",
   "license": "GPL-3.0",
   "devDependencies": {
     "@mate-academy/eslint-config": "*",
@@ -30,8 +28,7 @@
   "husky": {
     "hooks": {
       "post-commit": "git update-index --again",
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run test"
+      "pre-commit": "lint-staged"
     }
   },
   "dependencies": {
